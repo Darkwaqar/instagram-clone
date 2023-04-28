@@ -17,6 +17,7 @@ export default function BottomHomeNavigator() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        headerShown: false,
         tabBarIcon: ({ focused, color, size }) => {
           if (route.name === "Home") {
             return <Foundation name="home" size={size} color={color} />;

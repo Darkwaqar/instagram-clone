@@ -1,0 +1,177 @@
+mutation user1 {
+  createUser(
+    input: {name: "Waqar", image: "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-1024.png"}
+  ) {
+    id
+    name
+  }
+}
+
+mutation user2 {
+  createUser(
+    input: {name: "Sehrish", image: "https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-1024.png"}
+  ) {
+    id
+    name
+  }
+}
+
+mutation user3 {
+  createUser(
+    input: {name: "Chef", image: "https://cdn3.iconfinder.com/data/icons/diversity-avatars/64/chef-man-white-1024.png"}
+  ) {
+    id
+    name
+  }
+}
+
+mutation user4 {
+  createUser(
+    input: {name: "Granny", image: "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/grandma_elderly_nanny_avatar-1024.png"}
+  ) {
+    id
+    name
+  }
+}
+
+mutation post1 {
+  createPost(
+    input: {userID: "1fa01efd-7f78-4c28-b749-f139e2a6ec39", likes: 0, caption: "Hey there", image: "https://i.insider.com/5d03aa8e6fc9201bc7002b43?width=1136&format=jpeg"}
+  ) {
+    id
+    image
+    caption
+    user {
+      name
+    }
+  }
+}
+
+mutation story1 {
+  createStory(
+    input: {userID: "1fa01efd-7f78-4c28-b749-f139e2a6ec39", image: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eiffel_Tower_Vertical.JPG"}
+  ) {
+    id
+    image
+    user {
+      name
+    }
+  }
+}
+
+mutation post2 {
+  createPost(
+    input: {userID: "cd06e27b-241b-4ae6-83f9-bd957d6c8d21", likes: 12, caption: "Check this out", image: "https://cdnuploads.aa.com.tr/uploads/Contents/2020/05/14/thumbs_b_c_88bedbc66bb57f0e884555e8250ae5f9.jpg?v=140708"}
+  ) {
+    id
+    image
+    caption
+    user {
+      name
+    }
+  }
+}
+
+mutation story2 {
+  createStory(
+    input: {userID: "cd06e27b-241b-4ae6-83f9-bd957d6c8d21", image: "https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"}
+  ) {
+    id
+    image
+    user {
+      name
+    }
+  }
+}
+
+mutation post3 {
+  createPost(
+    input: {userID: "9034788a-d025-40f7-9afe-a71bc983152c", likes: 10, caption: "Like4Likes", image: "https://i.insider.com/5d03aa8e6fc9201bc7002b43?width=1136&format=jpeg"}
+  ) {
+    id
+    image
+    caption
+    user {
+      name
+    }
+  }
+}
+
+mutation story3 {
+  createStory(
+    input: {userID: "9034788a-d025-40f7-9afe-a71bc983152c", image: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eiffel_Tower_Vertical.JPG"}
+  ) {
+    id
+    image
+    user {
+      name
+    }
+  }
+}
+
+mutation post4 {
+  createPost(
+    input: {userID: "d52dea34-ae68-4dfa-8662-50737c2f084a", likes: 40, caption: "isn't this awesome", image: "https://cdnuploads.aa.com.tr/uploads/Contents/2020/05/14/thumbs_b_c_88bedbc66bb57f0e884555e8250ae5f9.jpg?v=140708"}
+  ) {
+    id
+    image
+    caption
+    user {
+      name
+    }
+  }
+}
+
+mutation story4 {
+  createStory(
+    input: {userID: "d52dea34-ae68-4dfa-8662-50737c2f084a", image: "https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"}
+  ) {
+    id
+    image
+    user {
+      name
+    }
+  }
+}
+
+query listPosts {
+  listPosts {
+    items {
+      caption
+      createdAt
+      id
+      image
+      user {
+        id
+        image
+        name
+      }
+    }
+  }
+}
+
+query listStorys {
+  listStories {
+    items {
+      createdAt
+      id
+      image
+      user {
+        id
+        image
+        name
+      }
+    }
+  }
+}
+
+query listUsers {
+  listUsers {
+    items {
+      id
+      image
+      name
+    }
+  }
+}
+

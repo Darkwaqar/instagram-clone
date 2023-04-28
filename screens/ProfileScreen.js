@@ -3,8 +3,17 @@ import React from "react";
 
 const ProfileScreen = () => {
   return (
-    <View>
-      <Text>ProfileScreen</Text>
+    <View style={{ height: 1500 }}>
+      <Text
+        style={{
+          textAlign: "center",
+          marginTop: 300,
+          fontSize: 30,
+          color: "gray",
+        }}
+      >
+        Profile
+      </Text>
     </View>
   );
 };

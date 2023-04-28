@@ -3,7 +3,6 @@ import React from "react";
 import { Image } from "react-native";
 
 const PostBody = ({ imageUri }) => {
-  console.log(imageUri);
   return <Image source={{ uri: imageUri }} style={styles.image} />;
 };
 

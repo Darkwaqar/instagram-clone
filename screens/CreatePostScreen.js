@@ -3,8 +3,17 @@ import React from "react";
 
 const CreatePostScreen = () => {
   return (
-    <View>
-      <Text>CreatePostScreen</Text>
+    <View style={{ height: 1500 }}>
+      <Text
+        style={{
+          textAlign: "center",
+          marginTop: 300,
+          fontSize: 30,
+          color: "gray",
+        }}
+      >
+        Create Post
+      </Text>
     </View>
   );
 };

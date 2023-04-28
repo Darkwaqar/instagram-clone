@@ -3,8 +3,17 @@ import React from "react";
 
 const NotificationsScreen = () => {
   return (
-    <View>
-      <Text>NotificationsScreen</Text>
+    <View style={{ height: 1500 }}>
+      <Text
+        style={{
+          textAlign: "center",
+          marginTop: 300,
+          fontSize: 30,
+          color: "gray",
+        }}
+      >
+        Notifications
+      </Text>
     </View>
   );
 };
