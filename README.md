@@ -1,5 +1,9 @@
 # Clone Of Instagram
 
+# Technology Use
+
+React Native | Graphql | tailwind | React Native Navigation | aws-amplify | amplify-auth | react-native-animatable |react-native-progress | aws-amplify/ui-react-native | react-native-progress | react-native-image-progress
+
 # steps
 
 1. create a new application by `npx create-expo-app instagram-clone`
@@ -72,7 +76,10 @@ import { Authenticator, useAuthenticator } from "@aws-amplify/ui-react-native";
 15. `amplify console api` or `amplify mock api`
 
 16. add react-native-progress and react native image progress
-    `yarn add react-native-progress react-native-image-progress `
+    `yarn add react-native-progress react-native-image-progress`
+
+17. make sure to add svg
+    `npx expo install react-native-svg`
 
 # preview
 
